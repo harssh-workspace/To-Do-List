@@ -146,5 +146,6 @@
     .addtask button{
         font-size: medium;
         font-weight: 400;
+        padding: 5px 15px;
     }
 }
