@@ -139,6 +139,9 @@
     .to-do-app{
         width: 350px;
     }
+    .addtask{
+        flex-direction: row;
+    }
     .addtask input{
         font-size: small;
         font-weight: 400;
