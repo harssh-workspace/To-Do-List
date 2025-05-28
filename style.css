@@ -19,7 +19,7 @@
 }
 
 .to-do-app {
-    width: 100%;
+    /* width: 100%; */
     max-width: 540px;
     border-radius: 10px;
     background-color: aliceblue;
@@ -113,4 +113,25 @@
 .to-do-app ul li span:hover{
     background: #edeef0;
     border-radius: 20px;
+}
+
+/* Responsive Web Design */
+
+@media(max-width:480px){
+    .to-do-app{
+        width: 370px;
+    }
+    .addtask input{
+        font-size: small;
+        font-weight: 400;
+    }
+    .addtask{
+        font-size: medium;
+        font-weight: 400;
+    }
+}
+@media(max-width:320px){
+    .to-do-app{
+        width: 330px;
+    }
 }
