@@ -33,6 +33,6 @@ function saveData() {
 }
 
 function showTask() {
-    listContainer.innerHTML = localStorage.getItem("data")
+    listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask()
