@@ -135,3 +135,16 @@
         width: 330px;
     }
 }
+@media(max-width:600px){
+    .to-do-app{
+        width: 400px;
+    }
+    .addtask input{
+        font-size: small;
+        font-weight: 400;
+    }
+    .addtask{
+        font-size: medium;
+        font-weight: 400;
+    }
+}
