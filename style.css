@@ -20,6 +20,7 @@
 
 .to-do-app {
     /* width: 100%; */
+    word-wrap: break-word;
     max-width: 540px;
     border-radius: 10px;
     background-color: aliceblue;
@@ -66,16 +67,17 @@
     font-size: large;
 }
 
-.to-do-app ul li{
+ul li{
     list-style: none;
     user-select: none;
     font-size: 17px;
+    font-weight: 500;
     padding: 12px 8px 12px 50px;
     cursor: pointer;
     position: relative;
     margin: 10px 30px;
 }
-.to-do-app ul li::before{
+ul li::before{
     content: '';
     position:absolute;
     height: 28px;
@@ -85,23 +87,24 @@
     background-position: center;
     background-size: cover;
     top: 12px;
-    left: 12px;
+    left: -5px;
 }
-.to-do-app ul li.checked{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-.to-do-app ul li.checked::before{
+ul li.checked::before{
     background: url(/images/checked.png);
     background-position: center;
     background-size: cover;
     top: 12px;
-    left: 12px;
+    left: -5px;
 }
 
-.to-do-app ul li span{
+ul li span{
+    /* z-index: 1000; */
     position: absolute;
-    right: 0;
+    right: -25px;
     top: 5px;
     height: 40px;
     width: 40px;
@@ -110,7 +113,7 @@
     color: #555;
     font-size: 22px;
 }
-.to-do-app ul li span:hover{
+ul li span:hover{
     background: #edeef0;
     border-radius: 20px;
 }
@@ -138,6 +141,7 @@
 @media(max-width:600px){
     .to-do-app{
         width: 350px;
+        overflow: hidden;
     }
     .addtask{
         flex-direction: row;
