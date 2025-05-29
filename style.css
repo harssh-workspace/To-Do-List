@@ -56,7 +56,7 @@ html {
     align-items: center;
     margin: 20px;
     background-color: #E7E9EB;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 5px;
     gap: 10px;
 }
@@ -105,7 +105,7 @@ html {
     background-color: rgb(237 183 14);
     color: white;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
