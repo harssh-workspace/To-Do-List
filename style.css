@@ -135,18 +135,13 @@ ul li span:hover {
         max-width: 100%;
     }
 
-    .addtask {
-        flex-direction: row;
-        margin-right: 50px;
-        justify-content: space-around;
-    }
-
     .addtask input {
         font-size: 0.9rem;
         flex: 0;
     }
 
     .addtask button {
+        margin-right: 50px;
         padding: 8px 16px;
         font-size: 0.9rem;
     }
