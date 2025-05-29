@@ -142,10 +142,10 @@ ul li span:hover{
     .to-do-app{
         width: 350px;
         overflow: hidden;
-    }
-    .addtask{
         flex-direction: row;
     }
+    /* .addtask{
+    } */
     .addtask input{
         font-size: small;
         font-weight: 400;
