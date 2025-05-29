@@ -121,7 +121,7 @@ ul li span:hover{
 
 /* Responsive Web Design */
 
-/* @media(max-width:480px){
+@media(max-width:480px){
     .to-do-app{
         width: 330px;
     }
@@ -134,7 +134,7 @@ ul li span:hover{
         font-weight: 400;
     }
 }
-@media(max-width:320px){
+/* @media(max-width:320px){
     .to-do-app{
         width: 300px;
     }
