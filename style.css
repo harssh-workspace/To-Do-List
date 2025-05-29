@@ -8,6 +8,11 @@
     font-style: normal;
 }
 
+body,
+html {
+    height: 100%;
+}
+
 .container {
     background: linear-gradient(135deg, #7F7FD5, #91EAE4);
     width: 100%;
@@ -32,7 +37,7 @@
     color: indigo;
     text-align: center;
     margin: 35px 30px;
-    
+
 }
 
 .addtask {
@@ -68,7 +73,7 @@
     font-size: large;
 }
 
-ul li{
+ul li {
     list-style: none;
     user-select: none;
     font-size: 17px;
@@ -78,9 +83,10 @@ ul li{
     position: relative;
     margin: 10px 30px;
 }
-ul li::before{
+
+ul li::before {
     content: '';
-    position:absolute;
+    position: absolute;
     height: 28px;
     width: 28px;
     border-radius: 50%;
@@ -90,11 +96,13 @@ ul li::before{
     top: 12px;
     left: -5px;
 }
-ul li.checked{
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background: url(/images/checked.png);
     background-position: center;
     background-size: cover;
@@ -102,7 +110,7 @@ ul li.checked::before{
     left: -5px;
 }
 
-ul li span{
+ul li span {
     /* z-index: 1000; */
     position: absolute;
     right: -25px;
@@ -114,12 +122,42 @@ ul li span{
     color: #555;
     font-size: 22px;
 }
-ul li span:hover{
+
+ul li span:hover {
     background: #edeef0;
     border-radius: 20px;
 }
 
 /* Responsive Web Design */
+
+@media (max-width: 600px) {
+    .to-do-app {
+        max-width: 100%;
+    }
+
+    .addtask input {
+        font-size: 0.9rem;
+    }
+
+    .addtask button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    ul li span {
+        font-size: 18px;
+        height: 28px;
+        width: 28px;
+    }
+}
 
 /* @media(max-width:480px){
     .to-do-app{
@@ -134,22 +172,23 @@ ul li span:hover{
         font-weight: 400;
     }
 } */
- /* @media(max-width:320px){
+/* @media(max-width:320px){
     .to-do-app{
         width: 300px;
     }
 }*/
-@media(max-width:600px){ 
-    .to-do-app{
+@media(max-width:600px) {
+    .to-do-app {
         width: 350px;
         overflow: hidden;
     }
-   
-    .addtask input{
+
+    .addtask input {
         font-size: small;
         font-weight: 400;
     }
-    .addtask button{
+
+    .addtask button {
         font-size: medium;
         font-weight: 400;
         padding: 5px 15px;
