@@ -120,7 +120,7 @@ ul li span:hover{
 
 /* Responsive Web Design */
 
-@media(max-width:480px){
+/* @media(max-width:480px){
     .to-do-app{
         width: 330px;
     }
@@ -142,10 +142,8 @@ ul li span:hover{
     .to-do-app{
         width: 350px;
         overflow: hidden;
-        flex-direction: row;
     }
-    /* .addtask{
-    } */
+   
     .addtask input{
         font-size: small;
         font-weight: 400;
@@ -155,4 +153,4 @@ ul li span:hover{
         font-weight: 400;
         padding: 5px 15px;
     }
-}
+} */
