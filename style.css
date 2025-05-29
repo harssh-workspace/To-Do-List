@@ -137,7 +137,7 @@ ul li span:hover {
 
     .addtask {
         flex-direction: row;
-        margin: 35px 30px;
+        margin-right: 50px;
         justify-content: space-around;
     }
 
